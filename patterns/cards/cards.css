@@ -1,0 +1,27 @@
+.card {
+  position: relative;
+  height: 20rem;
+  border: none;
+  margin: 0;
+  color: #fff;
+
+  background-image:
+    linear-gradient(to bottom right, rgba(255, 0, 132, 0) 0%, rgba(255, 0, 132, 0) 26%, rgba(255, 0, 132, 1) 100%),
+    url("https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg");
+  background-size: cover;
+}
+
+.card .title {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  right: 0;
+
+  transition: .5s ease;
+}
+
+.form-card {
+  border: none;
+  margin: 0;
+  color: #555;
+}
