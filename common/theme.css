@@ -1,0 +1,173 @@
+:root {
+  --color-primary: #52a9ff;
+  --color-primary-light: #b2d6ff;
+  --color-primary-dark: #1e79d3;
+  --color-secondary: #443e98;
+  --color-accent: #e53c96;
+  --color-neutral: #b8b8b8;
+  --color-neutral-dark: #3d3d3d;
+  --border-radius: 10px;
+  --font-primary: "Quicksand", sans-serif;
+  --font-secondary: "Oswald", sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+.list {
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--font-secondary);
+  font-size: 3.998em;
+}
+
+h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.827em;
+}
+
+h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.999em;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: var(--font-secondary);
+  color: var(--color-primary-dark);
+  font-size: 1.414em;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+h6 {
+  color: var(--color-primary);
+  font-size: .707em;
+  font-weight: 700;
+}
+
+p {
+  font-size: .707em;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav ul {
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav li {
+  float: left;
+  padding: 14px 16px;
+}
+
+.nav li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+ol {
+  background: var(--color-primary-dark);
+  padding: 20px;
+}
+
+ol li {
+  background: var(--color-primary);
+  padding: 5px;
+  margin-left: 35px;
+}
+
+dl {
+  border-left: 5px solid var(--color-primary);
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+blockquote {
+  font-style: italic;
+  width: 500px;
+  margin: .25em 0;
+  padding: .35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: var(--color-secondary);
+}
+
+blockquote ::before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: var(--font-secondary);
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+blockquote cite ::before {
+  content: "\2014 \2009";
+}
+
+cite {
+  color: var(--color-primary);
+}
+
+em {
+  color: var(--color-accent);
+}
+
+ins {
+  color: var(--color-accent);
+}
+
+abbr {
+  color: var(--color-primary);
+}
+
+dfn {
+  color: var(--color-primary-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+mark {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+q ::before {
+  content: "\201C";
+  font-size: 1em;
+  color: var(--color-primary-dark);
+}
+
+q ::after {
+  content: "\201C";
+  font-size: 1em;
+  color: var(--color-primary-dark);
+}
