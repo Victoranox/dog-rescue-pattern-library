@@ -51,12 +51,11 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../../images/icons/check.svg");
 }
 
-/* .is-validated input:invalid,
+.is-validated input:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before,
 .is-validated input[type="radio"]:invalid + label::before {
   border-color: var(--color-accent);
 }
-*/
 
 .error-message {
   display: none;
@@ -70,9 +69,9 @@ input[type="checkbox"]:checked + label::before {
   color: var(--color-accent);
 }
 
-.is-validated > .error-message:first-child/* ,
+.is-validated > .error-message:first-child,
 .is-validated input:invalid + .error-message,
-.is-validated input:invalid ~ .error-message */ {
+.is-validated input:invalid ~ .error-message {
   display: block;
 }
 
@@ -81,6 +80,7 @@ input[type="checkbox"]:checked + label::before {
   border: var(--color-primary);
 }
 
+/*
 input[type="checkbox"]:not(old),
 input[type="radio"]:not(old) {
   width: 28px;
@@ -97,3 +97,4 @@ input[type="radio"]:not(old) + label {
   background: no-repeat 0 0;
   line-height: 24px;
 }
+*/

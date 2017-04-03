@@ -37,8 +37,7 @@
   border-color: var(--color-primary-light);
   color: #fff;
 
-  background-image:
-    linear-gradient(to top left, rgba(178, 214, 255, 0) 0%, rgba(178, 214, 255, 0) 26%, rgba(178, 214, 255, 1) 100%);
+  background-image: linear-gradient(to top left, rgba(178, 214, 255, 0) 0%, rgba(178, 214, 255, 0) 26%, rgba(178, 214, 255, 1) 100%);
   background-size: cover;
 }
 

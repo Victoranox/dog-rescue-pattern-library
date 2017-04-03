@@ -8,12 +8,11 @@
   transition: .5s ease;
 }
 
-.lost{
+.lost {
   background-color: var(--color-neutral);
   height: 20rem;
   color: #fff;
 }
-
 
 .carousel-items > div {
   display: none;
