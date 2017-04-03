@@ -4,10 +4,8 @@
   --color-primary-dark: #1e79d3;
   --color-secondary: #443e98;
   --color-accent: #e53c96;
-<<<<<<< HEAD
   --color-accent-light: #ffd8ed;
-=======
->>>>>>> origin/gh-pages
+
   --color-neutral: #b8b8b8;
   --color-neutral-dark: #3d3d3d;
   --border-radius: 10px;
@@ -86,12 +84,12 @@ ul {
 }
 
 ol {
-  background: var(--color-primary-dark);
+  color: #fff;
+  background: var(--color-primary);
   padding: 20px;
 }
 
 ol li {
-  background: var(--color-primary);
   padding: 5px;
   margin-left: 35px;
 }

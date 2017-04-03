@@ -1,0 +1,26 @@
+.latest {
+  position: relative;
+  height: 20rem;
+  border: none;
+  margin: 0;
+  color: #fff;
+
+}
+
+.latest .title {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  transition: .5s ease;
+  background-color: var(--color-neutral)
+}
+
+.latest-img {
+  position: relative;
+  height: 20rem;
+  border: none;
+  margin: 0;
+  background-image: url("http://www.japantimes.co.jp/wp-content/uploads/2016/12/n-rusdog-z-20161211-870x580.jpg");
+  background-size: cover;
+}

@@ -6,7 +6,7 @@
   color: #fff;
 
   background-image:
-    linear-gradient(to bottom right, rgba(255, 0, 132, 0) 0%, rgba(255, 0, 132, 0) 26%, rgba(255, 0, 132, 1) 100%),
+    linear-gradient(to bottom right, rgba(30, 121, 211, 0) 0%, rgba(30, 121, 211, 0) 26%, rgba(30, 121, 211, 1) 100%),
     url("https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg");
   background-size: cover;
 }

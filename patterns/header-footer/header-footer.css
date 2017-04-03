@@ -1,0 +1,29 @@
+ol {
+  background: var(--color-primary);
+}
+
+a {
+  color: #fff;
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.circle {
+  background-color: #fff;
+  border: 9px #fff;
+  border-radius: 50%;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  padding-top: .3rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  h1 {
+    font-size: 3.998rem;
+  }
+
+}

@@ -1,0 +1,45 @@
+.lost .card .title {
+  text-align: right;
+  bottom: 0;
+  right: 0;
+
+  color: #fff;
+
+  transition: .5s ease;
+}
+
+.lost{
+  background-color: var(--color-neutral);
+  height: 20rem;
+  color: #fff;
+}
+
+
+.carousel-items > div {
+  display: none;
+  height: 20rem;
+}
+
+.carosel img {
+  position: inherit;
+}
+
+#pet1-control:checked ~ .carousel-inner #pet1,
+#pet2-control:checked ~ .carousel-inner #pet2,
+#pet3-control:checked ~ .carousel-inner #pet3,
+#pet4-control:checked ~ .carousel-inner #pet4 {
+  display: block;
+}
+
+.carousel-btn {
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+#pet1-control:checked ~ .carousel-inner [for="pet1-control"],
+#pet2-control:checked ~ .carousel-inner [for="pet2-control"],
+#pet3-control:checked ~ .carousel-inner [for="pet3-control"],
+#pet4-control:checked ~ .carousel-inner [for="pet4-control"] {
+
+  background-color: #fff;
+}

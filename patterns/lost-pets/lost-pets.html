@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Lost Pets</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="lost-pets.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="grid">
+
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] lost island-1-2">
+      <div class="island-1-2 title">
+        <h2 class="pad-b-1-2" href="#">Lost Pets</h2>
+      </div>
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ] carousel">
+          <input class="carousel-input" type="radio" name="pet" id="pet1-control" checked>
+          <input class="carousel-input" type="radio" name="pet" id="pet2-control">
+          <input class="carousel-input" type="radio" name="pet" id="pet3-control">
+          <input class="carousel-input" type="radio" name="pet" id="pet4-control">
+
+          <div class="carousel-inner relative">
+            <div class="carousel-items">
+
+              <div class="carousel-items embed embed-golden" id="pet1">
+                <img class="img-flex embed-item" src="http://3milliondogs.com/blog-assets-two/2015/08/sad-eyed-dog-with-book.jpg" alt="">
+              </div>
+
+              <div class="carousel-items embed embed-golden" id="pet2">
+                <img class="img-flex embed-item" src="http://stories.barkpost.com/wp-content/uploads/2015/08/11-sad-dog.jpg" alt="">
+              </div>
+
+              <div class="carousel-items embed embed-golden" id="pet3">
+                <img class="img-flex embed-item" src="https://i.ytimg.com/vi/PKffm2uI4dk/maxresdefault.jpg" alt="">
+              </div>
+
+              <div class="carousel-items embed embed-golden" id="pet4">
+                <img class="img-flex embed-item" src="https://drscdn.500px.org/photo/71331575/q%3D80_m%3D1500/495f54e6484296ceec58bf66234c2bb1img-flex " alt="">
+              </div>
+            </div>
+
+              <ul class="carousel-controls absolute list-group-inline pin-bc w-1 text-center push-0 island-1-2">
+                <li>
+                  <label class="carousel-btn icon i-18 ir" for="pet1-control">Pet1</label>
+                </li>
+                <li>
+                  <label class="carousel-btn icon i-18 ir" for="pet2-control">Pet2</label>
+                </li>
+                <li>
+                  <label class="carousel-btn icon i-18 ir" for="pet3-control">Pet3</label>
+                </li>
+                <li>
+                  <label class="carousel-btn icon i-18 ir" for="pet4-control">Pet4</label>
+                </li>
+              </ul>
+
+          </div>
+      </div>
+
+</body>
+</html>

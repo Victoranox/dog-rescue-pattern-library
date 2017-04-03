@@ -12,14 +12,12 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quicksand:400,700" rel="stylesheet">
   <link href="icons.css" rel="stylesheet">
 </head>
-
-<form class="max-length island" method="post" novalidate>
-
+<body>
 
    <form class="max-length island" method="post" novalidate>
      <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
        <h3 class="push-0">
-         <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+         <i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i>
          <span class="icon-label">Opps! You missed something important!</span>
        </h3>
     </div>
@@ -30,23 +28,16 @@
     <div class="push-1-2">
       <label for="name">Name</label>
       <input id="name" required aria-describedby="name-error">
-      <p class="error-message milli island-1-4 push-0" id="name-error">
-        <i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i>
-        <span class="icon-label">Please provide a name</span>
-      </p>
+      <p class="error-message milli island-1-4 push-0" id="name-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
     </div>
 
-
     <div class="push-1-2">
-        <label for="email" >Email</label>
+        <label for="email">Email</label>
         <input type="email" id="email" required aria-describedby="email-error">
-        <p class="error-message milli island-1-4 push-0" id="email-error">
-          <i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i>
-          <span class="icon-label">Please provide a properly formatted email address</span>
-        </p>
+        <p class="error-message milli island-1-4 push-0" id="email-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please provide a properly formatted email address</span></p>
     </div>
 
-    <div class="push-1-2">
+    <div class="drop-down push-1-2">
       <select name="numbers">
         <option value="one">one</option>
         <option value="two">two</option>
@@ -55,8 +46,8 @@
       </select>
     </div>
 
-      <div class="push-1-2" required aria-describedby="textarea-error">
-        <textarea>Write something here!</textarea>
+      <div class="push-1-2" aria-describedby="textarea-error">
+        <textarea id="textarea-error">Write something here!</textarea>
       </div>
 
       <input type="date" name="bday">
@@ -69,12 +60,9 @@
       <div class="push-1-2 pad-t-1-2">
         <input type="checkbox" id="this" aria-describedby="this-error">
         <label for="this">I have this</label>
-        <input type="checkbox" id="that" aria-describedby="that-error">
+        <input type="checkbox" id="that" aria-describedby="this-error">
         <label for="that">I have that</label>
-        <p class="error-message milli island-1-4 push-0" id="this-error">
-          <i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i>
-          <span class="icon-label">Please agree that you're totally awesome</span>
-        </p>
+        <p class="error-message milli island-1-4 push-0" id="this-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please agree that you're totally awesome</span></p>
       </div>
 
       <div class="push-1-2 pad-t-1-2">
@@ -83,17 +71,14 @@
           <label for="yes">Yes</label>
           <input type="radio" name="yesno" id="no" value="no" required aria-describedby="yesno-error">
           <label for="no">No</label>
-          <p class="error-message milli island-1-4 push-0" id="yesno-error">
-            <i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i>
-            <span class="icon-label">Please agree that you're totally awesome</span>
-          </p>
+          <p class="error-message milli island-1-4 push-0" id="yesno-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please select an option</span></p>
 
       </div>
 
     <div class="pad-t-1-2">
       <button class="btn" type="submit">Send</button>
     </div>
-</fieldset>
+  </fieldset>
 
   </form>
 
