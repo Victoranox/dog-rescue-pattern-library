@@ -1,6 +1,17 @@
 .search {
   background-color: var(--color-primary);
   border: none;
+  display: block;
+}
+
+.side li {
+  display: inline-block;
+  border-left: 3px solid var(--color-primary);
+}
+
+.side {
+  color: var(--color-primary);
+  background-color: #fff;
 }
 
 .side a i {
@@ -9,29 +20,18 @@
 }
 
 .side a:hover {
-  color: var(--color-primary);
+  color: var(--color-primary-light);
 }
 
-.search a {
-  color: #fff;
-}
-
-.side .btn-light a {
+.side a {
   color: var(--color-primary);
 }
 
 .bracket {
-  border-top: 3px solid var(--color-primary);
-  border-right: none;
-  border-left: none;
-  border-bottom: none;
+  border: none;
 }
 
-.bracket:last-child {
-  border-bottom: 3px solid var(--color-primary);
-}
-
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 38em) {
 
   .side ul {
     border-top: 3px solid var(--color-primary);
@@ -39,22 +39,33 @@
   }
 
   .side li {
-    display: inline-block;
+    display: block;
+    border-left: 0;
   }
 
   .bracket {
+    border: 3px solid var(--color-primary);
+    border-left: none;
+    border-right: none;
     margin: 0;
-    border-right: 3px solid var(--color-primary);
-    border-bottom: none;
     border-top: none;
   }
 
-  .bracket:first-child {
-    border-left: 3px solid var(--color-primary);
-    border-bottom: none;
+  .search li {
+    display: inline-block;
   }
 
-  .bracket:last-child {
-    border-bottom: none;
+  .side {
+    color: var(--color-primary);
+    border: 0;
+    position: fixed;
+    z-index: 1200;
+    width: 31%;
   }
+
+  .w-banner {
+    background: #fff;
+    max-height: 100%;
+  }
+
 }

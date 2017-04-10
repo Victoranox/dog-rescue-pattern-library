@@ -2,16 +2,17 @@
   text-align: right;
   bottom: 0;
   right: 0;
-
   color: #fff;
 
   transition: .5s ease;
 }
 
 .lost {
-  background-color: var(--color-neutral);
-  height: 20rem;
   color: #fff;
+}
+
+.bg {
+  background-color: var(--color-neutral);
 }
 
 .carousel-items > div {
@@ -20,6 +21,10 @@
 }
 
 .carosel img {
+  position: inherit;
+}
+
+.carosel p {
   position: inherit;
 }
 
@@ -41,4 +46,36 @@
 #pet4-control:checked ~ .carousel-inner [for="pet4-control"] {
 
   background-color: #fff;
+}
+
+.carousel-items p {
+  right: 0;
+  top: 0;
+}
+
+.image::before {
+  position: absolute;
+  width: 35%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 20px solid var(--color-neutral);
+  border-right: 20px solid transparent;
+  display: inline;
+  content: " ";
+  z-index: 300;
+}
+
+.image::after {
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+  right: 0;
+  border-bottom: 20px solid var(--color-neutral);
+  border-left: 20px solid transparent;
+  display: block;
+  content: " ";
+}
+
+.image {
+  border-color: var(--color-neutral-light);
 }

@@ -8,6 +8,23 @@
     linear-gradient(to bottom right, rgba(30, 121, 211, 0) 0%, rgba(30, 121, 211, 0) 26%, rgba(30, 121, 211, 1) 100%),
     url("http://princealbertspca.ca/wp-content/uploads/2017/02/rod-e1487714230741.jpg");
   background-size: cover;
+  max-width: 100%;
+}
+
+.featured-pet:nth-child(2) {
+  background-image:
+    linear-gradient(to bottom right, rgba(30, 121, 211, 0) 0%, rgba(30, 121, 211, 0) 26%, rgba(30, 121, 211, 1) 100%),
+    url("http://paulmejias.com/images/shaggy_dog-17-detail.jpg");
+  background-size: cover;
+  max-width: 100%;
+}
+
+.featured-pet:nth-child(3) {
+  background-image:
+    linear-gradient(to bottom right, rgba(30, 121, 211, 0) 0%, rgba(30, 121, 211, 0) 26%, rgba(30, 121, 211, 1) 100%),
+    url("http://www.catster.com/wp-content/uploads/2015/06/skinny-mini-sphynx.jpg");
+  background-size: cover;
+  max-width: 100%;
 }
 
 .feature-card .title {
@@ -20,9 +37,10 @@
 }
 
 .featured {
-  background-color: var(--color-neutral);
+  background-color: var(--color-neutral-light);
   height: 20rem;
   color: #fff;
+  width: 100%;
 }
 
 .pname {
@@ -51,4 +69,12 @@
 .featured-pet:hover {
   opacity: .75;
 
+}
+
+@media only screen and (min-width: 38em) {
+
+  .featured {
+
+    width: 50%;
+  }
 }
