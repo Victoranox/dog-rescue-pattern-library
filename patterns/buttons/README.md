@@ -1,5 +1,7 @@
 ---
-The buttons use the primary colors to stand out and capture users attention.
+buttons:
+  desc: |
+    These are buttons for use throughout the site. There are styles for different functions/situations- such as the ghost button for use with dark backgrounds.
+  width: 500
 
-Mixing with various font sizes is welcome in order to make different button variations.
 ---
