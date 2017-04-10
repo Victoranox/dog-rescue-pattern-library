@@ -1,4 +1,6 @@
 ---
+outputFile: "index.html"
+
 name: "Loyal Rescue"
 fontUrl: "https://fonts.googleapis.com/css?family=Oswald|Quicksand"
 fonts:
@@ -18,6 +20,8 @@ colors:
     The Secondary colour is a light magenta- to re-enforce the idea of adoption as a familiar and personal process (baby blue and pink).
   neutral: |
     The Neutral colours are shades of gray as not to distract form the harmony of the primary and secondary colours.
+
+
 ---
 
 LOYAL Rescue Inc. is a foster based rescue and we do not operate a shelter. Though we cant offer viewing hours, we ensure you find the right pet for you when you go through our custom application process.
