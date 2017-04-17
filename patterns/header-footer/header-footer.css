@@ -2,8 +2,17 @@ ol {
   background: var(--color-primary);
 }
 
-a {
+.nav a {
+  padding: .5rem;
   color: #fff;
+
+}
+
+.nav a:hover {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  padding: .5rem;
+  border-radius: 3px;
 }
 
 footer {

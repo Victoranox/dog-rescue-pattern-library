@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #52a9ff;
-  --color-primary-light: #b2d6ff;
-  --color-primary-dark: #1e79d3;
+  --color-primary: #8eb5d3;
+  --color-primary-light: #a9e2ff;
+  --color-primary-dark: #52778e;
   --color-secondary: #443e98;
   --color-accent: #e53c96;
   --color-accent-light: #ffd8ed;
@@ -43,7 +43,7 @@ h4 {
   font-family: var(--font-secondary);
   color: var(--color-primary-dark);
   font-size: 1.414em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h5 {
@@ -54,7 +54,7 @@ h5 {
 h6 {
   color: var(--color-primary);
   font-size: .707em;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 p {

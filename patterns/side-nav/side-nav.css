@@ -6,17 +6,25 @@
 
 .side li {
   display: inline-block;
-  border-left: 3px solid var(--color-primary);
+}
+
+.side li:first-child {
+  display: inline-block;
 }
 
 .side {
-  color: var(--color-primary);
+  color: var(--color-primary-light);
+  box-shadow: 4px -4px 7px rgba(0, 0, 0, .3);
+  z-index: 50;
   background-color: #fff;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .side a i {
   margin: auto;
-  color: var(--color-primary);
+  color: #fff;
 }
 
 .side a:hover {
@@ -27,28 +35,62 @@
   color: var(--color-primary);
 }
 
-.bracket {
-  border: none;
+.bracket:hover {
+  background-color: var(--color-primary);
+}
+
+.bracket:hover a {
+  color: #fff;
+}
+
+.sub-menu-parent .sub-menu a {
+  color: #fff;
+}
+
+.sub-menu-parent {
+  position: relative;
+  color: #fff;
+  width: 100%;
+}
+
+.sub-menu-parent ul li a {
+  margin: 0;
+}
+
+.sub-menu-parent ul {
+  margin-bottom: 0;
+}
+
+.sub-menu {
+  background-color: var(--color-primary);
+  font-size: .9372rem;
+  list-style-type: none;
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  padding: .5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1;
+  color: #fff;
+}
+
+.sub-menu-parent:hover .sub-menu {
+  position: relative;
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
 }
 
 @media only screen and (min-width: 38em) {
 
-  .side ul {
-    border-top: 3px solid var(--color-primary);
-    border-bottom: 3px solid var(--color-primary);
-  }
-
   .side li {
     display: block;
-    border-left: 0;
   }
 
   .bracket {
-    border: 3px solid var(--color-primary);
-    border-left: none;
-    border-right: none;
     margin: 0;
-    border-top: none;
+
   }
 
   .search li {
@@ -57,10 +99,9 @@
 
   .side {
     color: var(--color-primary);
-    border: 0;
     position: fixed;
     z-index: 1200;
-    width: 31%;
+    width: 33.333%;
   }
 
   .w-banner {
