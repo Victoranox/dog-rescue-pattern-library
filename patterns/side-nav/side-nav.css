@@ -22,11 +22,6 @@
   left: 0;
 }
 
-.side a i {
-  margin: auto;
-  color: #fff;
-}
-
 .side a:hover {
   color: var(--color-primary-light);
 }
@@ -37,6 +32,14 @@
 
 .bracket:hover {
   background-color: var(--color-primary);
+}
+
+.highlight {
+  background-color: var(--color-primary-light-white);
+}
+
+.highlight a {
+  color: #fff;
 }
 
 .bracket:hover a {

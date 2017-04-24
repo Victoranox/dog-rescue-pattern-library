@@ -1,6 +1,7 @@
 :root {
   --color-primary: #8eb5d3;
   --color-primary-light: #a9e2ff;
+  --color-primary-light-white: #bedcf4;
   --color-primary-dark: #52778e;
   --color-secondary: #443e98;
   --color-accent: #e53c96;
@@ -66,6 +67,10 @@ ul {
   text-align: center;
 }
 
+strong {
+  color: var(--color-primary: #8eb5d3);
+}
+
 .nav ul {
   color: white;
   margin: 0;
@@ -76,7 +81,6 @@ ul {
 
 .nav li {
   float: left;
-  padding: 14px 16px;
 }
 
 .nav li a {
@@ -93,7 +97,6 @@ ol {
 
 ol li {
   padding: 5px;
-  margin-left: 35px;
 }
 
 dl {

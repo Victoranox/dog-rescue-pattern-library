@@ -2,12 +2,16 @@
   color: #999;
 }
 
+legend {
+  color: var(--color-primary-dark);
+}
+
 textarea {
   padding: .5rem;
 }
 
 .drop-down select {
-  border: 3.5px solid var(--color-primary);
+  border: 3.5px solid var(--color-neutral);
   border-radius: 6px;
   background-image: url("../../images/icons/down.svg");
   color: var(--color-primary);
@@ -15,6 +19,16 @@ textarea {
 
 label {
   color: var(--color-primary);
+  font-size: .8784rem;
+  line-height: 1.3rem;
+}
+
+.tint {
+  color: var(--color-primary: #8eb5d3);
+}
+
+.check-cent {
+  text-align: center;
 }
 
 input, textarea {
@@ -27,11 +41,6 @@ input[type="radio"] + label::before {
   border: 3.5px solid #666;
   width: 1rem;
   height: 1rem;
-}
-
-input[type="radio"]:checked + label::before {
-  background-image: url("../../images/icons/fill.svg");
-  color: var(--color-primary);
 }
 
 input[type="checkbox"] + label::before {

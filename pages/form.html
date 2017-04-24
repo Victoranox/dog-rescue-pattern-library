@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/main.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/header-footer/header-footer.css" rel="stylesheet">
+  <link href="../patterns/side-nav/side-nav.css" rel="stylesheet">
+  <link href="../patterns/buttons/buttons.css" rel="stylesheet">
+  <link href="../patterns/cards/cards.css" rel="stylesheet">
+  <link href="../patterns/latest/latest.css" rel="stylesheet">
+  <link href="../patterns/featured-pets/featured-pets.css" rel="stylesheet">
+  <link href="../patterns/lost-pets/lost-pets.css" rel="stylesheet">
+  <link href="../patterns/profile/profile.css" rel="stylesheet">
+  <link href="../patterns/forms/form.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Quicksand:400,700" rel="stylesheet">
+  <link href="buttons.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="grid">
+
+    <div class="unit [ xs-1 s-1 m-1-3 l-1-3 ]">
+    </div>
+
+    <div class="unit [ xs-1 s-1 m-2-3 l-2-3 ]">
+      <header role="banner" class="">
+
+        <nav role="navigation" id="nav" class="nav">
+          <ol class="mega pin-cb list-group-inline push-l">
+            <li><a class="kilo" href="#about">FOR ADOPTION</a></li>
+            <li><a class="kilo" href="#contact">HAPPY TAILS</a></li>
+            <li><a class="kilo" href="#about">APPLICATION</a></li>
+            <li><a class="kilo" href="#about">FAQ</a></li>
+            <li><a class="kilo" href="#contact">CONTACT</a></li>
+          </ol>
+        </nav>
+      </header>
+      <div class="grid">
+        <ul class="text-right unit [ xs-1 s-1 m-1-3 l-1-3 ] side list-group pin-tl">
+          <li class="w-1 push text-center pad-t profile pad-t">
+            <i class="circle">
+              <img class=" con i-64" src="../../images/logo.svg" alt="loyal-icon">
+            </i>
+            <h1 class="push-0 exa inline-block pad-t-1-4">Loyal Rescue</h1>
+          </li>
+          <li class="bracket highlight island-1-2">
+            <a class="micro">ABOUT YOU
+              <i class="icon i-16 inline-block gutter-1-2">
+                <svg><use xlink:href="../../images/icons.svg#check" /></svg>
+              </i>
+            </a>
+          </li>
+          <li class="bracket island-1-2">
+            <a class="micro">YOUR LIFESTYLE
+              <i class="icon i-16 inline-block gutter-1-2">
+                <svg><use xlink:href="../../images/icons.svg#uncheck" /></svg>
+              </i>
+            </a>
+          </li>
+          <li class="bracket island-1-2">
+            <a class="micro">PET INFORMATION
+              <i class="icon i-16 inline-block gutter-1-2">
+                <svg><use xlink:href="../../images/icons.svg#uncheck" /></svg>
+              </i>
+            </a>
+          </li>
+          <li class="bracket island-1-2">
+            <a class="micro">OTHER
+              <i class="icon i-16 inline-block gutter-1-2">
+                <svg><use xlink:href="../../images/icons.svg#uncheck" /></svg>
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="max-length island-1-2" method="post" novalidate>
+        <h1 class="pad-t">About You</h1>
+        <p>Please fill in as much information as possible in each tab. If the application is not complete, we cannot consider you for one of our dogs. Adopting a rescued dog is a serious endeavor and should not be done as a "spur of the moment" action.</p>
+
+        <div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+          <h3 class="push-0">
+            <i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i>
+            <span class="icon-label">Opps! You missed something important!</span>
+          </h3>
+        </div>
+
+        <fieldset>
+          <legend>Responsibility Agreement</legend>
+          <div class="grid">
+            <div class="unit [ xs-1 s-1 m-1 l-1 ]">
+              <div class="island push-1-4">
+                <label class="pad-b-1-4" for="pet-name">Name of the pet you are interested in adopting.</label>
+                <input id="pet-name" required aria-describedby="petname-error">
+                <p class="error-message milli island-1-4 push-0" id="petname-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island">
+                <label class="pad-b-1-4" for="yesno1">I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</label>
+                <div class="grid">
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno1" id="yes1" value="yes1" required aria-describedby="yesno-error1">
+                    <label class="check-cent" for="yes1">Yes</label>
+                  </div>
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno1" id="no1" value="no1" required aria-describedby="yesno-error1">
+                    <label class="check-cent" for="no1">No</label>
+                  </div>
+                </div>
+                <p class="error-message milli island-1-4 push-0" id="yesno-error1"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please select an option</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island">
+                <label class="pad-b-1-4" for="yesno2">I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected..</label>
+                <div class="grid">
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno2" id="yes2" value="yes2" required aria-describedby="yesno-error2">
+                    <label class="check-cent" for="yes2">Yes</label>
+                  </div>
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno2" id="no2" value="no2" required aria-describedby="yesno-error2">
+                    <label class="check-cent" for="no2">No</label>
+                  </div>
+                </div>
+                <p class="error-message milli island-1-4 push-0" id="yesno-error2"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please select an option</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island">
+                <label class="pad-b-1-4" for="yesno3">In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</label>
+                <div class="grid">
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno3" id="yes3" value="yes3" required aria-describedby="yesno-error3">
+                    <label class="check-cent" for="yes3">Yes</label>
+                  </div>
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno3" id="no3" value="no3" required aria-describedby="yesno-error3">
+                    <label class="check-cent" for="no3">No</label>
+                  </div>
+                </div>
+                <p class="error-message milli island-1-4 push-0" id="yesno-error3"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please select an option</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island">
+                <label class="pad-b-1-4" for="tesno3">I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</label>
+                <div class="grid">
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno0" id="yes0" value="yes0" required aria-describedby="yesno-error3">
+                    <label class="check-cent" for="yes0">Yes</label>
+                  </div>
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno0" id="no0" value="no0" required aria-describedby="yesno-error3">
+                    <label class="check-cent" for="no0">No</label>
+                  </div>
+                </div>
+                <p class="error-message milli island-1-4 push-0" id="yesno-error0"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please select an option</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1 l-1 ]">
+              <div class="island">
+                <label class="pad-b-1-4" for="yesno4">I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</label>
+                <div class="grid">
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno4" id="yes4" value="yes4" required aria-describedby="yesno-error4">
+                    <label class="check-cent" for="yes4">Yes</label>
+                  </div>
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno4" id="no4" value="no4" required aria-describedby="yesno-error4">
+                    <label class="check-cent" for="no4">No</label>
+                  </div>
+                </div>
+                <p class="error-message milli island-1-4 push-0" id="yesno-error4"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please select an option</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island">
+                <label class="pad-b-1-4" for="yesno5">I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</label>
+                <div class="grid">
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno5" id="yes5" value="yes5" required aria-describedby="yesno-error5">
+                    <label class="check-cent" for="yes5">Yes</label>
+                  </div>
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesno5" id="no5" value="no5" required aria-describedby="yesno-error5">
+                    <label class="check-cent" for="no5">No</label>
+                  </div>
+                </div>
+                <p class="error-message milli island-1-4 push-0" id="yesno-error5"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please select an option</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island">
+                <label class="pad-b-1-4" for="tesno3">I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</label>
+                <div class="grid">
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesnofaq" id="yesfaq" value="yesfaq" required aria-describedby="yesno-errorfaq">
+                    <label class="check-cent" for="yesfaq">Yes</label>
+                  </div>
+                  <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                    <input type="radio" name="yesnofaq" id="nofaq" value="nofaq" required aria-describedby="yesno-errorfaq">
+                    <label class="check-cent" for="nofaq">No</label>
+                  </div>
+                </div>
+                <p class="error-message milli island-1-4 push-0" id="yesno-errorfaq"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please select an option</span></p>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Personal Info</legend>
+          <div class="grid">
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <label class="pad-b-1-4" for="pet-name">Full name (first and last)</label>
+                <input id="name" required aria-describedby="name-error">
+                <p class="error-message milli island-1-4 push-0" id="name-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <label class="pad-b-1-4" for="partner-name">Partners full name (optional)</label>
+                <input id="partner-name">
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <label class="pad-b-1-4" for="pet-name">Your Age</label>
+                <input id="age" required aria-describedby="age-error">
+                <p class="error-message milli island-1-4 push-0" id="age-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <label class="pad-b-1-4" for="pet-name">Partner Age (optional)</label>
+                <input id="partnerage">
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <label class="pad-b-1-4" for="pet-name">Address</label>
+                <input id="address" required aria-describedby="address-error">
+                <p class="error-message milli island-1-4 push-0" id="address-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <label class="pad-b-1-4" for="city">City</label>
+                <input id="city" required aria-describedby="city-error">
+                <p class="error-message milli island-1-4 push-0" id="city-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <label class="pad-b-1-4" for="province">Province</label>
+                <input id="province" required aria-describedby="province-error">
+                <p class="error-message milli island-1-4 push-0" id="province-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <label class="pad-b-1-4" for="postal">Postal Code</label>
+                <input id="postal" required aria-describedby="post-error">
+                <p class="error-message milli island-1-4 push-0" id="post-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <div class="push-1-2">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required aria-describedby="email-error">
+                  <p class="error-message milli island-1-4 push-0" id="email-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please provide a properly formatted email address</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+              <div class="island-1-4 gutter">
+                <div class="push-1-2">
+                  <label for="altemail">Alternate Email</label>
+                  <input type="email" id="altemail" required aria-describedby="altemail-error">
+                  <p class="error-message milli island-1-4 push-0" id="altemail-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please provide a properly formatted email address</span></p>
+                </div>
+              </div>
+            </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="pet-name">Primary Phone</label>
+                  <input id="primaryphone">
+                </div>
+
+                <div class="drop-down gutter pad-b-1-4">
+                  <select name="numbers">
+                    <option value="one">Home Phone</option>
+                    <option value="two">Cell Phone</option>
+                    <option value="three">Work</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="altphone">Alternate Phone (optional)</label>
+                  <input id="altphone">
+                </div>
+
+                <div class="drop-down gutter pad-b-1-4">
+                  <select name="numbers">
+                    <option value="one">Home Phone</option>
+                    <option value="two">Cell Phone</option>
+                    <option value="three">Work</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Work</legend>
+              <div class="grid">
+                <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                  <div class="island-1-4 gutter">
+                    <label class="pad-b-1-4" for="best-time">Best time to call?</label>
+                    <input id="best-time">
+                  </div>
+
+                  <div class="gutter">
+                    <label class="pad-b-1-4" for="work-call">Can we call your workplace?.</label>
+                    <div class="grid">
+                      <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                        <input type="radio" name="work-call" id="yeswc" value="yeswc">
+                      <label class="work-call" for="yes4">Yes</label>
+                    </div>
+                    <div class="check-cent unit [ xs-1-2 s-1-2 m-1-2 l-1-2 ]">
+                      <input type="radio" name="yesnowc" id="nowc" value="nowc">
+                      <label class="work-call" for="nowc">No</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="employer">Empolyer</label>
+                  <input id="employer"required aria-describedby="employer-error">
+                  <p class="error-message milli island-1-4 push-0" id="employer-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+                </div>
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="employerphone">Empolyer Phone</label>
+                  <input id="employerphone" required aria-describedby="employerphone-error">
+                  <p class="error-message milli island-1-4 push-0" id="employerphone-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="jobtitile">Job Title (optional)</label>
+                  <input id="jobtitile">
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="employeedate">Date of Employment (optional)</label>
+                  <input id="employeedate">
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1 l-1 ]">
+                <div class="tint pad-t">
+                  <strong class="tint island milli bold">Partner employment</strong>
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="spouseemployee">Spouse employer (optional)</label>
+                  <input id="spouseemployee">
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="spousejob">Job Title (optional)</label>
+                  <input id="spousejob">
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="spousephone">Phone (optional)</label>
+                  <input id="spousephone">
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="spouseemployeedate">Date of Employment (optional)</label>
+                  <input id="spouseemployeedate">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Family</legend>
+            <div class="grid">
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="employee">Number of Children</label>
+                  <input id="employee" aria-describedby="children-error">
+                  <p class="error-message milli island-1-4 push-0" id="children-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="ages">Ages</label>
+                  <input id="ages" aria-describedby="age-error">
+                  <p class="error-message milli island-1-4 push-0" id="age-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+                </div>
+
+                <div class="drop-down gutter pad-b-1-4">
+                  <select name="genders">
+                    <option value="one">Both Genders</option>
+                    <option value="two">Female</option>
+                    <option value="three">Male</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="household"># of people in household</label>
+                  <input id="household" aria-describedby="household-error">
+                  <p class="error-message milli island-1-4 push-0" id="household-error"><i class="icon i-32"><svg><use xlink:href="../../images/warning.svg#error" /></svg></i><span class="icon-label">Please fill out this field</span></p>
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1-2 l-1-2 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="addages">Age(s) of any not already specified</label>
+                  <input id="addages">
+                </div>
+              </div>
+
+              <div class="unit [ xs-1 s-1 m-1 l-1 ]">
+                <div class="island-1-4 gutter">
+                  <label class="pad-b-1-4" for="allergies">Does anyone have any allergies? If so, please explain</label>
+                  <textarea id="textarea-error"></textarea>
+                </div>
+              </div>
+
+              <div class="unit island [ xs-1 s-1 m-1 l-1 ]">
+                <h6>You're progress will be saved</h6>
+                <button class="btn" type="submit">Next Page</button>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+      </form>
+    <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+    </div>
+  </div>
+</body>
+</html>

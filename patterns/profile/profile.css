@@ -1,12 +1,36 @@
 .profile .circle {
   background-color: #fff;
-  border: 5px solid var(--color-neutral);
+  border: 5px solid var(--color-primary-light-white);
   border-radius: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 20rem;
+  height: 20rem;
 }
 
 .profile p {
   color: var(--color-neutral);
   background-color: #fff;
+}
+
+.profile h1 {
+  color: #fff;
+}
+
+.profile {
+  background-color: var(--color-primary-light-white);
+}
+
+@media only screen and (min-width: 38em) {
+  .profile h1 {
+    font-size: 1.2148rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  .profile h1 {
+
+    font-size: 1.383rem;
+    line-height: 1.95rem;
+  }
 }

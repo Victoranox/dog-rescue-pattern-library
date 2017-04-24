@@ -5,12 +5,16 @@ ol {
 .nav a {
   padding: .5rem;
   color: #fff;
+}
 
+.nav ol {
+  padding-left: .75rem;
+  margin-bottom: 0;
 }
 
 .nav a:hover {
   color: var(--color-primary);
-  background: var(--color-primary-light);
+  background: var(--color-primary-light-white);
   padding: .5rem;
   border-radius: 3px;
 }
@@ -24,9 +28,11 @@ footer {
   background-color: #fff;
   border: 9px #fff;
   border-radius: 50%;
-  padding-right: .5rem;
-  padding-left: .5rem;
-  padding-top: .3rem;
+  padding-right: .75rem;
+  padding-left: .75rem;
+  padding-top: 3rem;
+  padding-bottom: .75rem;
+  margin: .5rem;
 }
 
 @media only screen and (min-width: 25em) {
