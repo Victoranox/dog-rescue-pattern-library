@@ -1,4 +1,5 @@
 .featured-pet {
+  filter: grayscale(100%);
   position: relative;
   height: 20rem;
   border: none;
@@ -67,8 +68,7 @@
 }
 
 .featured-pet:hover {
-  opacity: .75;
-
+  filter: grayscale(0%);
 }
 
 @media only screen and (min-width: 38em) {
